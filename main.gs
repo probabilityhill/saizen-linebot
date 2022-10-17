@@ -1,13 +1,6 @@
-const scriptProperties = PropertiesService.getScriptProperties();
-const ACCESS_TOKEN = scriptProperties.getProperty('ACCESS_TOKEN');
-
-// ユーザ情報を書きこむシートを取得
-const sheetId = "1IMu0jFkGIxofVEWgy71pNf1iR6RaAJwDB_tgjZ-GGKY";
-const data = SpreadsheetApp.openById(sheetId).getSheets()[0];
-
 function tmp() {
   const USER_ID = "test";
-  let text = "word";
+  let text = "きし";
   console.log(getReplyMsg(USER_ID, text));
 }
 
@@ -36,12 +29,7 @@ function execute(event){
   else if(EVENT_TYPE === "message"){
     if(event.message.type === "text"){
       let text = event.message.text.trim();  // 先頭・末尾の空白削除
-      let msg = [{
-        "type":"text",
-        "text":text
-      }];
-      sendReplyMessage(REPLY_TOKEN, msg);
-      // sendReplyMessage(REPLY_TOKEN, getReplyMsg(USER_ID, text));
+      sendReplyMessage(REPLY_TOKEN, getReplyMsg(USER_ID, text));
     }
   }
 }
