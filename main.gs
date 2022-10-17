@@ -19,10 +19,10 @@ function execute(event){
   const REPLY_TOKEN = event.replyToken;
 
   if(EVENT_TYPE === "follow"){
-    const ROW = data.getLastRow()+1;  // 書く行取得
-    data.getRange(ROW,1).setValue(USER_ID);  // A列目にユーザID記入
-    // setStatus(USER_ID, 0);  // ステータス0を設定
-    data.getDataRange().removeDuplicates([1]);  // ユーザIDの重複を削除
+    const ROW = SHEET.getLastRow()+1;  // 書く行取得
+    SHEET.getRange(ROW,1).setValue(USER_ID);  // A列目にユーザID記入
+    setStatus(USER_ID, 0);  // ステータス0を設定
+    SHEET.getDataRange().removeDuplicates([1]);  // ユーザIDの重複を削除
     // const MSG = getFlexMsg("rule", RULE, getImgUrl("w0"), hasImg=true);
     // sendReplyMessage(REPLY_TOKEN, MSG);
   }
