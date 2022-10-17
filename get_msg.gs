@@ -5,7 +5,7 @@ function getReplyMsg(userId, text){
     setStatus(userId, 1);  // ステータス1を設定
     // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[0];
-    return[getFlexMsg(ANS, getAnsBtn(ANS))];
+    return[getTextMsg("Q1～Q3はチュートリアルとなっている"),getFlexMsg(ANS, getAnsBtn(ANS))];
   }
   else if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
@@ -25,7 +25,7 @@ function getReplyMsg(userId, text){
         return [JUDGE_MSG, getFlexMsg(ANS, getAnsBtn(ANS))];
       }
       else if(status === 3){
-        // カルーセル？
+        // ＋カルーセル
         return [JUDGE_MSG];
       }
       return [JUDGE_MSG];
@@ -99,7 +99,7 @@ function getAnsBtn(text){
           "contents": [],
           "weight": "bold",
           "color": "#666666",
-          "text": text,
+          "text": "クリック",
           "align": "center"
         }
       ],

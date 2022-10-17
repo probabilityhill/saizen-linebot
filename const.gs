@@ -5,7 +5,7 @@ const ACCESS_TOKEN = SCRIPT_PROPERTIES.getProperty('ACCESS_TOKEN');
 const SHEET_ID = "1IMu0jFkGIxofVEWgy71pNf1iR6RaAJwDB_tgjZ-GGKY";
 const SHEET = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
 
-const ANS_LIST = ["きし","くるま","？","くし","？","口","ゆみ","右","めん","ふきし","ふくるま","ふ？","ふくし","ふ？","ふ口","ふゆみ","ふ右","ふめん"];
+const ANS_LIST = ["とほ","くるま","くち","くし","いくさ","くつした","ゆみ","みぎ","めん","ふきし","ふくるま","ふくち","ふくし","ふいくさ","ふくつした","ふゆみ","ふみぎ","ふめん"];
 
 const QUICK_REPLY = {
   "items": [
