@@ -2,14 +2,33 @@
 function getReplyMsg(userId, text){
   let status = getStatus(userId);  // ステータスを取得
   if(text == "start"){
-    
+    setStatus(userId, 1);  // ステータス1を設定
+    // 画像カルーセル1~3 + 「きし」ボタン 送信
+    const ANS = ANS_LIST[0];
+    return[getFlexMsg(ANS, getAnsBtn(ANS))];
   }
   else if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
-    if(ANS_IDX > -1){  // o or x
+    if(ANS_IDX > -1){  // ○or✕
       const JUDGE = ANS_IDX < 9 ? 1 : 2;
       const JUDGE_MARK = JUDGE === 1 ? "○" : "✕";
-      return getJudgeMsg(status, JUDGE_MARK);
+      const JUDGE_MSG = getJudgeMsg(status, JUDGE_MARK);
+
+      setStatus(userId, status+1);  // ステータスを更新
+
+      if(status === 1){  // 1問目に正解した場合
+        const ANS = ANS_LIST[10];  // 2+9-1=10
+        return [JUDGE_MSG, getFlexMsg(ANS, getAnsBtn(ANS))];
+      }
+      else if(status === 2){
+        const ANS = ANS_LIST[2];
+        return [JUDGE_MSG, getFlexMsg(ANS, getAnsBtn(ANS))];
+      }
+      else if(status === 3){
+        // カルーセル？
+        return [JUDGE_MSG];
+      }
+      return [JUDGE_MSG];
     }
   }
   /*
@@ -67,38 +86,62 @@ function getReplyMsg(userId, text){
   }];
 }
 
+function getAnsBtn(text){
+  return {
+    "type": "bubble",
+    "size": "nano",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "contents": [],
+          "weight": "bold",
+          "color": "#666666",
+          "text": text,
+          "align": "center"
+        }
+      ],
+      "action": {
+        "type": "message",
+        "label": text,
+        "text": text
+      }
+    }
+  };
+}
+
+
+// テキストメッセージを取得
+function getTextMsg(text){
+  return {
+    "type":"text",
+    "text":text,
+    "quickReply": QUICK_REPLY
+  };
+}
+
+// ○✕を返す
 function getJudgeMsg(n, text){
-  return [{
+  return {
     "type":"text",
     "text":text,
     "sender": {
       "name": n+"手目"
     },
     "quickReply": QUICK_REPLY
-  }];
+  };
 }
 
 // Flex Messageを取得
-function getFlexMsg(label, content, url="", hasImg=false){
-  if(hasImg){
-    return [{
-      "type": "image",
-      "originalContentUrl": url,
-      "previewImageUrl": url
-    },
-    {
-      'type':'flex',
-      'altText':label,
-      'contents':content,
-      "quickReply": QUICK_REPLY
-    }];
-  }
-  return [{
+function getFlexMsg(label, content){
+  return {
     'type':'flex',
     'altText':label,
     'contents':content,
     "quickReply": QUICK_REPLY
-  }];
+  };
 }
 
 // 画像メッセージを取得
