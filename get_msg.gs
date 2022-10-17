@@ -3,9 +3,10 @@ function getReplyMsg(userId, text){
   let status = getStatus(userId);  // ステータスを取得
   if(text == "start"){
     setStatus(userId, 1);  // ステータス1を設定
+    setStatus(userId, [[0,0,0,0,0,0,0,0,0]], col=7, numRows=1, numCols=9);  // マスを初期化
     // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[0];
-    return[getTextMsg("Q1～Q3はチュートリアルとなっている"),getFlexMsg(ANS, getAnsBtn(ANS))];
+    return[getTextMsg("Q1～Q3はチュートリアルとなっています（入力せずにボタンを押下）"),getFlexMsg(ANS, getAnsBtn(ANS))];
   }
   else if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
@@ -13,9 +14,14 @@ function getReplyMsg(userId, text){
       const JUDGE = ANS_IDX < 9 ? 1 : 2;
       const JUDGE_MARK = JUDGE === 1 ? "○" : "✕";
       const JUDGE_MSG = getJudgeMsg(status, JUDGE_MARK);
+      const IS_OVER = status % 2 + 1 === JUDGE;  // overになったかどうか
+      let msg;
 
+      setStatus(userId, JUDGE, col=7+ANS_IDX%9);  // マスを埋める
       setStatus(userId, status+1);  // ステータスを更新
-
+      
+      const BOARD = getStatus(userId, col=7, numRows=1, numCols=9)[0];
+      
       if(status === 1){  // 1問目に正解した場合
         const ANS = ANS_LIST[10];  // 2+9-1=10
         return [JUDGE_MSG, getFlexMsg(ANS, getAnsBtn(ANS))];
@@ -28,6 +34,28 @@ function getReplyMsg(userId, text){
         // ＋カルーセル
         return [JUDGE_MSG];
       }
+
+      // ゲームオーバー判定
+      if(IS_OVER){
+        setStatus(userId,"over",col=16);  // ステータスoverを設定
+        msg = "GAME OVER";
+      }
+
+      // ゲームオーバーでない場合
+      if(getStatus(userId, col=16) != "over"){
+        const WINNER = judgeWin(BOARD);
+        if(WINNER == 1){
+          msg = "WIN: ○";
+        }
+        else if(WINNER == 2){
+          msg = "WIN: ✕";
+        }
+      }
+      
+      if(msg){
+        return [JUDGE_MSG, getTextMsg(msg)];
+      }
+
       return [JUDGE_MSG];
     }
   }

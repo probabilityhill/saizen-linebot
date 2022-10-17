@@ -1,7 +1,8 @@
 function tmp() {
   const USER_ID = "test";
-  let text = "きし";
+  let text = "めん";
   console.log(getReplyMsg(USER_ID, text));
+  //console.log(getStatus(USER_ID, col=16));
 }
 
 // イベントを受け取る
