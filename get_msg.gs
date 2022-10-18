@@ -1,11 +1,28 @@
 // 応答メッセージを取得
 function getReplyMsg(userId, text){
   let status = getStatus(userId);  // ステータスを取得
+
   if(text == "start"){
     setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);  // データを初期化
     // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
-    return[getTextMsg("Q1～Q3はチュートリアルとなっています（入力せずにボタンを押下）"),getFlexMsg("CLICK", getAnsBtn(ANS))];
+    return[getTextMsg("Q1～Q3 (TUTORIAL)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
+  }
+  else if(text == "hint"){
+    let hint;
+    if(status >= 1 && status <= 3){
+      hint = HINT_1_3;
+    }
+    else if(status >= 4 && status <= 9){
+      hint = HINT_4_9;
+    }
+    else if(status === 10){
+      hint = HINT_GAME;
+    }
+    else{
+      hint = "None.";
+    }
+    return getTextMsg(hint);
   }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
@@ -34,7 +51,7 @@ function getReplyMsg(userId, text){
       }
       else if(status === 3){
         // ＋カルーセル
-        return [JUDGE_MSG];
+        return [JUDGE_MSG, getTextMsg("Q4～Q9")];
       }
 
       let result = getStatus(userId, col=16);
@@ -64,10 +81,10 @@ function getReplyMsg(userId, text){
         }
         else{
           if(JUDGE_RESULT[1]){  // クリア可能な場合
-            msg += "DRAW（最善手を打ち続けた）";
+            msg += "DRAW（最善を尽くした）";
           }
           else{
-            msg += "DRAW（最善手を打たなかった）";
+            msg += "DRAW（最善を尽くさなかった）";
           }          
         }
       }
