@@ -9,7 +9,8 @@ function getReplyMsg(userId, text){
   }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
-    if(getStatus(userId, col=7+ANS_IDX%9)) break outer;  // 解答済みの場合は抜ける
+    const Q_IDX = ANS_IDX % 9;
+    if(getStatus(userId, col=7+Q_IDX)) break outer;  // 解答済みの場合は抜ける
 
     if(ANS_IDX > -1){  // ○or✕
       const JUDGE = ANS_IDX < 9 ? 1 : 2;
@@ -18,18 +19,18 @@ function getReplyMsg(userId, text){
       const IS_OVER = status % 2 + 1 === JUDGE;  // ゲームオーバーになったかどうか
       let msg;
 
-      setStatus(userId, JUDGE, col=7+ANS_IDX%9);  // マスを埋める
+      setStatus(userId, JUDGE, col=7+Q_IDX);  // マスを埋める
       setStatus(userId, status+1);  // ステータスを更新
 
       const BOARD = getStatus(userId, col=7, numRows=1, numCols=9)[0];
       
       if(status === 1){  // 1問目に正解した場合
-        const ANS = ANS_LIST[CLEAR_ORDER[1]];
-        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(ANS))];
+        const NEXT_ANS = ANS_LIST[CLEAR_ORDER[1]];
+        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(NEXT_ANS))];
       }
       else if(status === 2){
-        const ANS = ANS_LIST[CLEAR_ORDER[2]];
-        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(ANS))];
+        const NEXT_ANS = ANS_LIST[CLEAR_ORDER[2]];
+        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(NEXT_ANS))];
       }
       else if(status === 3){
         // ＋カルーセル
@@ -47,9 +48,9 @@ function getReplyMsg(userId, text){
         }        
         else if(judgeWin(BOARD)){  // 勝敗がついた場合
           msg = "WIN: " + JUDGE_MARK;
-          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // result="WIN: ?"を設定
+          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // result="WIN: "を設定
         }
-        else if(ANS_IDX != CLEAR_ORDER[status]){  // クリア不可能になった場合
+        else if(ANS_IDX != CLEAR_ORDER[status-1]){  // クリア不可能になった場合
           setStatus(userId,0,col=17);  // clear:0を設定
         }
       }
