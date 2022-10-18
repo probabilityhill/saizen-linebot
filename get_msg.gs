@@ -2,14 +2,15 @@
 function getReplyMsg(userId, text){
   let status = getStatus(userId);  // ステータスを取得
   if(text == "start"){
-    setStatus(userId, 1);  // ステータス1を設定
-    setStatus(userId, [[0,0,0,0,0,0,0,0,0]], col=7, numRows=1, numCols=9);  // マスを初期化
+    setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=9);  // データを初期化
     // 画像カルーセル1~3 + 「きし」ボタン 送信
-    const ANS = ANS_LIST[0];
-    return[getTextMsg("Q1～Q3はチュートリアルとなっています（入力せずにボタンを押下）"),getFlexMsg(ANS, getAnsBtn(ANS))];
+    const ANS = ANS_LIST[CLEAR_ORDER[0]];
+    return[getTextMsg("Q1～Q3はチュートリアルとなっています（入力せずにボタンを押下）"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
-  else if(status >= 1 && status <= 9){  // status1~9の場合
+  else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
+    if(getStatus(userId, col=7+ANS_IDX%9)) break outer;  // 解答済みの場合は抜ける
+
     if(ANS_IDX > -1){  // ○or✕
       const JUDGE = ANS_IDX < 9 ? 1 : 2;
       const JUDGE_MARK = JUDGE === 1 ? "○" : "✕";
@@ -19,16 +20,16 @@ function getReplyMsg(userId, text){
 
       setStatus(userId, JUDGE, col=7+ANS_IDX%9);  // マスを埋める
       setStatus(userId, status+1);  // ステータスを更新
-      
+
       const BOARD = getStatus(userId, col=7, numRows=1, numCols=9)[0];
       
       if(status === 1){  // 1問目に正解した場合
-        const ANS = ANS_LIST[10];  // 2+9-1=10
-        return [JUDGE_MSG, getFlexMsg(ANS, getAnsBtn(ANS))];
+        const ANS = ANS_LIST[CLEAR_ORDER[1]];
+        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(ANS))];
       }
       else if(status === 2){
-        const ANS = ANS_LIST[2];
-        return [JUDGE_MSG, getFlexMsg(ANS, getAnsBtn(ANS))];
+        const ANS = ANS_LIST[CLEAR_ORDER[2]];
+        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(ANS))];
       }
       else if(status === 3){
         // ＋カルーセル
@@ -37,21 +38,41 @@ function getReplyMsg(userId, text){
 
       // ゲームオーバー判定
       if(IS_OVER){
-        setStatus(userId,"over",col=16);  // ステータスoverを設定
+        setStatus(userId,[["GAME OVER",0]],col=16,numRows=1,numCols=2);  // ステータスoverを設定
         msg = "GAME OVER";
       }
 
-      // ゲームオーバーでない場合
-      if(getStatus(userId, col=16) != "over"){
+      let result = getStatus(userId, col=16);
+
+      // ゲームが終了していない場合
+      if(!ENDED_LIST.includes(result)){
         const WINNER = judgeWin(BOARD);
-        if(WINNER == 1){
-          msg = "WIN: ○";
+        if(WINNER){  // 勝敗がついた場合
+          msg = "WIN: " + JUDGE_MARK;
+          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // resultを設定
         }
-        else if(WINNER == 2){
-          msg = "WIN: ✕";
+        else if(ANS_IDX != CLEAR_ORDER[status]){  // クリア不可能になった場合
+          setStatus(userId,0,col=17);  // clear:0を設定
         }
       }
-      
+
+      if(status === 9){
+        const JUDGE_RESULT = getStatus(userId, col=16,numRows=1,numCols=2)[0];
+        result = JUDGE_RESULT[0];
+        msg = "【RESULT】";
+        if(result){  // ゲームが終了している場合
+          msg += result;
+        }
+        else{
+          if(JUDGE_RESULT[1]){  // クリア可能な場合
+            msg += "DRAW（最善手を打ち続けた）";
+          }
+          else{
+            msg += "DRAW（最善手を打たなかった）";
+          }          
+        }
+      }
+
       if(msg){
         return [JUDGE_MSG, getTextMsg(msg)];
       }
@@ -127,19 +148,20 @@ function getAnsBtn(text){
           "contents": [],
           "weight": "bold",
           "color": "#666666",
-          "text": "クリック",
-          "align": "center"
+          "text": "CLICK",
+          "align": "center",
+          "size": "sm"
         }
       ],
       "action": {
         "type": "message",
-        "label": text,
         "text": text
-      }
+      },
+      "paddingStart": "none",
+      "paddingEnd": "none"
     }
   };
 }
-
 
 // テキストメッセージを取得
 function getTextMsg(text){

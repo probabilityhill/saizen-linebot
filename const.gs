@@ -5,7 +5,9 @@ const ACCESS_TOKEN = SCRIPT_PROPERTIES.getProperty('ACCESS_TOKEN');
 const SHEET_ID = "1IMu0jFkGIxofVEWgy71pNf1iR6RaAJwDB_tgjZ-GGKY";
 const SHEET = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
 
-const ANS_LIST = ["とほ","くるま","くち","くし","いくさ","くつした","ゆみ","みぎ","めん","ふきし","ふくるま","ふくち","ふくし","ふいくさ","ふくつした","ふゆみ","ふみぎ","ふめん"];
+const ANS_LIST = ["くし","いくさ","くるま","ゆみ","とほ","みぎ","めん","くつした","くち","ふくし","ふいくさ","ふくるま","ふゆみ","ふとほ","ふみぎ","ふめん","ふくつした","ふくち"];
+const CLEAR_ORDER = [4,11,8,9,1,16,3,13,6];
+const ENDED_LIST = ["GAME OVER", "WIN: ○", "WIN: ✕"];
 
 const QUICK_REPLY = {
   "items": [
