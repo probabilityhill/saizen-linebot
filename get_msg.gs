@@ -22,7 +22,7 @@ function getReplyMsg(userId, text){
     else{
       hint = "None.";
     }
-    return getTextMsg(hint);
+    return [getTextMsg(hint)];
   }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);

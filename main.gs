@@ -1,6 +1,6 @@
 function tmp() {
   const USER_ID = "test";
-  let text = "start";
+  let text = "hint";
   console.log(getReplyMsg(USER_ID, text));
   //console.log(getStatus(USER_ID, col=16));
 }
