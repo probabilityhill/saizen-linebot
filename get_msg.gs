@@ -15,7 +15,7 @@ function getReplyMsg(userId, text){
       const JUDGE = ANS_IDX < 9 ? 1 : 2;
       const JUDGE_MARK = JUDGE === 1 ? "○" : "✕";
       const JUDGE_MSG = getJudgeMsg(status, JUDGE_MARK);
-      const IS_OVER = status % 2 + 1 === JUDGE;  // overになったかどうか
+      const IS_OVER = status % 2 + 1 === JUDGE;  // ゲームオーバーになったかどうか
       let msg;
 
       setStatus(userId, JUDGE, col=7+ANS_IDX%9);  // マスを埋める
@@ -36,20 +36,18 @@ function getReplyMsg(userId, text){
         return [JUDGE_MSG];
       }
 
-      // ゲームオーバー判定
-      if(IS_OVER){
-        setStatus(userId,[["GAME OVER",0]],col=16,numRows=1,numCols=2);  // ステータスoverを設定
-        msg = "GAME OVER";
-      }
-
       let result = getStatus(userId, col=16);
 
       // ゲームが終了していない場合
       if(!ENDED_LIST.includes(result)){
-        const WINNER = judgeWin(BOARD);
-        if(WINNER){  // 勝敗がついた場合
+        if(IS_OVER){  // ゲームオーバーになった場合
+          result = "GAME OVER"
+          msg = result;
+          setStatus(userId,[[result,0]],col=16,numRows=1,numCols=2);  // result="GAME OVER"を設定          
+        }        
+        else if(judgeWin(BOARD)){  // 勝敗がついた場合
           msg = "WIN: " + JUDGE_MARK;
-          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // resultを設定
+          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // result="WIN: ?"を設定
         }
         else if(ANS_IDX != CLEAR_ORDER[status]){  // クリア不可能になった場合
           setStatus(userId,0,col=17);  // clear:0を設定
