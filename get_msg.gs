@@ -2,7 +2,7 @@
 function getReplyMsg(userId, text){
   let status = getStatus(userId);  // ステータスを取得
   if(text == "start"){
-    setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=9);  // データを初期化
+    setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);  // データを初期化
     // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
     return[getTextMsg("Q1～Q3はチュートリアルとなっています（入力せずにボタンを押下）"),getFlexMsg("CLICK", getAnsBtn(ANS))];
