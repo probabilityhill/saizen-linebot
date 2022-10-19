@@ -373,7 +373,7 @@ const CLEAR_MSG =(url, text)=> {
             "uri": url
           },
           "height": "sm",
-          "color": "#00acee",
+          "color": "#404040",
           "style": "primary"
         },
         {
