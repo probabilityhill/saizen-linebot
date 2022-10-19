@@ -8,7 +8,7 @@ function getReplyMsg(userId, text){
     return[CAROUSEL(), getTextMsg(" TUTORIAL(Q1～Q3)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
   else if(text == "HINT"){
-    return [getTextMsg(HINT_GAME)];
+    return [getFlexMsg("HINT", HINT_GAME)];
   }
   else if(text == "RULE"){
     return [getFlexMsg("RULE", RULE)];
