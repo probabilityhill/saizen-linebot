@@ -326,6 +326,62 @@ const CAROUSEL =()=> {
 }
 */
 
+const CLEAR_MSG = {
+  "type": "bubble",
+  "size": "kilo",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Congratulations!",
+        "weight": "bold",
+        "size": "lg",
+        "color": "#404040"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "contents": [
+          {
+            "type": "text",
+            "text": "クリアツイートは以下のボタンからお願いいたします。",
+            "color": "#404040",
+            "wrap": true,
+            "size": "sm"
+          }
+        ]
+      }
+    ],
+    "paddingBottom": "none"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "TWEET",
+          "uri": "https://twitter.com/intent/tweet?text=LINE%E8%AC%8E%E3%80%8Ewater%E3%80%8Fclear!%0A%0Aplay%20%E2%86%92%20https%3A%2F%2Flin.ee%2FPMyXCdw%0A%0A%23water%E8%AC%8E%20%23LINE%E8%AC%8E%20%40TM_TryAngle"
+        },
+        "height": "sm",
+        "color": "#00acee",
+        "style": "primary"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [],
+        "margin": "sm"
+      }
+    ]
+  }
+};
+
 const RULE = {
   "type": "bubble",
   "body": {
