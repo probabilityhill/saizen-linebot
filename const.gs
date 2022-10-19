@@ -96,7 +96,7 @@ const QUICK_REPLY = {
       "action": {
         "type": "message",
         "label": "START",
-        "text": "start"
+        "text": "START"
       }
     },
     {
@@ -104,15 +104,23 @@ const QUICK_REPLY = {
       "action": {
         "type": "message",
         "label": "RULE",
-        "text": "rule"
+        "text": "RULE"
       }
     },
     {
       "type": "action",
       "action": {
         "type": "message",
-        "label": "HINT(GAME)",
-        "text": "hint_game"
+        "label": "Q",
+        "text": "Q"
+      }
+    },
+    {
+      "type": "action",
+      "action": {
+        "type": "message",
+        "label": "Q",
+        "text": "Q"
       }
     },    
     {

@@ -6,11 +6,14 @@ function getReplyMsg(userId, text){
     setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);  // データを初期化
     // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
-    return[CAROUSEL(), getTextMsg("Q1～Q3 (TUTORIAL)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
+    return[CAROUSEL(), getTextMsg(" TUTORIAL(Q1～Q3)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
-  else if(text == "hint_game"){
+  else if(text == "HINT"){
     return [getTextMsg(HINT_GAME)];
   }
+  else if(text == "Q"){
+    return [CAROUSEL()];
+  }  
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
     const Q_IDX = ANS_IDX % 9;
@@ -28,17 +31,12 @@ function getReplyMsg(userId, text){
 
       const BOARD = getStatus(userId, col=7, numRows=1, numCols=9)[0];
       
-      if(status === 1){  // 1問目に正解した場合
-        const NEXT_ANS = ANS_LIST[CLEAR_ORDER[1]];
-        return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(NEXT_ANS))];
-      }
-      else if(status === 2){
-        const NEXT_ANS = ANS_LIST[CLEAR_ORDER[2]];
+      if(status === 1 || status === 2){  // Q1,2に正解した場合
+        const NEXT_ANS = ANS_LIST[CLEAR_ORDER[status]];
         return [JUDGE_MSG, getFlexMsg("CLICK", getAnsBtn(NEXT_ANS))];
       }
       else if(status === 3){
-        // ＋カルーセル
-        return [JUDGE_MSG, getTextMsg("Q4～Q9")];
+        return [JUDGE_MSG, getTextMsg("TUTORIAL COMPLETED")];
       }
 
       let result = getStatus(userId, col=16);
