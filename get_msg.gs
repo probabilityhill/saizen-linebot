@@ -4,7 +4,6 @@ function getReplyMsg(userId, text){
 
   if(text == "start"){
     setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);  // データを初期化
-    // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
     return[CAROUSEL(), getTextMsg(" TUTORIAL(Q1～Q3)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
@@ -18,6 +17,10 @@ function getReplyMsg(userId, text){
     setStatus(userId, 1, col=19);  // 到達を記録
     return getFlexMsg("Congratulations!", CLEAR_MSG, getImgUrl("great"), hasText=true);
   }  
+  else if(text == "null" && getStatus(userId,col=18)){
+    setStatus(userId, 1, col=20);  // 到達を記録
+    return getFlexMsg("Congratulations!", CLEAR_MSG, getImgUrl("null"), hasText=true);
+  }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
     const Q_IDX = ANS_IDX % 9;
@@ -72,6 +75,7 @@ function getReplyMsg(userId, text){
           if(JUDGE_RESULT[1]){  // クリア可能な場合
             setStatus(userId, 1, col=18);  // 到達を記録
             msg += "DRAW（最善を尽くした）";
+            // クリア画像
           }
           else{
             msg += "DRAW（最善を尽くさなかった）";
@@ -201,37 +205,11 @@ function getFlexMsg(label, content){
 }
 
 // 画像メッセージを取得
-function getImgMsg(url, second=null, hasText=false){
-  if(hasText){  // テキストがある場合
-    return [{
-      "type": "image",
-      "originalContentUrl": url,
-      "previewImageUrl": url
-    },
-    {
-      "type":"text",
-      "text":second,
-      "quickReply": QUICK_REPLY
-    }];
-  }
-  if(second){  // 2つ目の画像がある場合
-    return [{
-      "type": "image",
-      "originalContentUrl": url,
-      "previewImageUrl": url
-    },
-    {
-      "type": "image",
-      "originalContentUrl": second,
-      "previewImageUrl": second,
-      "quickReply": QUICK_REPLY
-    }];
-  }
-
-  return [{
+function getImgMsg(url){
+  return {
     "type": "image",
     "originalContentUrl": url,
     "previewImageUrl": url,
     "quickReply": QUICK_REPLY
-  }];
+  };
 }
