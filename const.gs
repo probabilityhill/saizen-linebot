@@ -119,8 +119,8 @@ const QUICK_REPLY = {
       "type": "action",
       "action": {
         "type": "message",
-        "label": "Q",
-        "text": "Q"
+        "label": "HINT",
+        "text": "HINT"
       }
     },    
     {
