@@ -59,8 +59,8 @@ function getReplyMsg(userId, text){
           setStatus(userId,[[result,0]],col=16,numRows=1,numCols=2);  // result="GAME OVER"を設定          
         }        
         else if(judgeWin(BOARD)){  // 勝敗がついた場合
-          msg = "WIN: " + JUDGE_MARK;
-          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // result="WIN: "を設定
+          msg = "WINNER: " + JUDGE_MARK;
+          setStatus(userId,[[msg,0]],col=16,numRows=1,numCols=2);  // result="WINNER: "を設定
         }
         else if(ANS_IDX != CLEAR_ORDER[status-1]){  // クリア不可能になった場合
           setStatus(userId,0,col=17);  // clear:0を設定
