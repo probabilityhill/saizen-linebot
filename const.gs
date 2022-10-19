@@ -5,7 +5,7 @@ const ACCESS_TOKEN = SCRIPT_PROPERTIES.getProperty('ACCESS_TOKEN');
 const SHEET_ID = "1IMu0jFkGIxofVEWgy71pNf1iR6RaAJwDB_tgjZ-GGKY";
 const SHEET = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
 
-const ANS_LIST = ["くし","いくさ","くるま","ゆみ","とほ","みぎ","めん","くつした","くち","ふくし","ふいくさ","ふくるま","ふゆみ","ふとほ","ふみぎ","ふめん","ふくつした","ふくち"];
+const ANS_LIST = ["くし","いくさ","くるま","ゆみ","けまり","ほうそく","めん","あひる","くち","ふくし","ふいくさ","ふくるま","ふゆみ","ふけまり","ふほうそく","ふめん","ふあひる","ふくち"];
 const HINT_LIST = ["🕒","□□→🦌","👁️","ろ","📺","☀️","50","H＜=推測","□=□=□=ん"];
 const HINT_GAME = "■: 置く場所";
 const CLEAR_ORDER = [4,11,8,9,1,16,3,14,6];
