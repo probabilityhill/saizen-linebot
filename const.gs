@@ -276,7 +276,7 @@ const RULE = {
             "contents": [
               {
                 "type": "text",
-                "text": "ゲーム終了後も解答可能である。また、STARTボタンからいつでもやり直すことができる。",
+                "text": "ゲーム終了後も解答可能。また、STARTボタンからいつでもやり直すことができる。",
                 "size": "sm",
                 "color": "#404040",
                 "wrap": true
@@ -304,13 +304,13 @@ const RULE = {
             "contents": [
               {
                 "type": "text",
-                "text": "・ 答えはひらがなで送信",
+                "text": "答えはひらがなで入力。",
                 "size": "sm",
                 "color": "#404040"
               },
               {
                 "type": "text",
-                "text": "・ 正解 → ◯　ふ正解 → ✕",
+                "text": "正解 → ◯　ふ正解 → ✕",
                 "size": "sm",
                 "color": "#404040"
               }
