@@ -13,6 +13,10 @@ function getReplyMsg(userId, text){
   }
   else if(text == "Q"){
     return [CAROUSEL()];
+  }
+  else if(text == "great" && getStatus(userId,col=18)){
+    setStatus(userId, 1, col=19);  // 到達を記録
+    return getFlexMsg("Congratulations!", CLEAR_MSG, getImgUrl("great"), hasText=true);
   }  
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
@@ -66,6 +70,7 @@ function getReplyMsg(userId, text){
         }
         else{
           if(JUDGE_RESULT[1]){  // クリア可能な場合
+            setStatus(userId, 1, col=18);  // 到達を記録
             msg += "DRAW（最善を尽くした）";
           }
           else{

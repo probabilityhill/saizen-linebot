@@ -1,9 +1,12 @@
 function tmp() {
   const USER_ID = "test";
   let text = "HINT";
-  console.log(getReplyMsg(USER_ID, text));
+  //console.log(getReplyMsg(USER_ID, text));
   //console.log(getStatus(USER_ID, col=16));
-  //console.log(CAROUSEL());
+  if(!getStatus(USER_ID,col=18)){
+    console.log("d");
+  }
+  
 }
 
 // イベントを受け取る
