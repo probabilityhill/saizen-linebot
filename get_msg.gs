@@ -6,7 +6,7 @@ function getReplyMsg(userId, text){
     setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);  // データを初期化
     // 画像カルーセル1~3 + 「きし」ボタン 送信
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
-    return[getTextMsg("Q1～Q3 (TUTORIAL)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
+    return[CAROUSEL(), getTextMsg("Q1～Q3 (TUTORIAL)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
   else if(text == "hint"){
     let hint;
