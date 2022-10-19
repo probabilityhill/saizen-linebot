@@ -10,6 +10,9 @@ const HINT_LIST = ["🕒","□□→🦌","👁️","ろ","📺","☀️","50","
 const HINT_GAME = "■: 置く場所";
 const CLEAR_ORDER = [4,11,8,9,1,16,3,14,6];
 const ENDED_LIST = ["GAME OVER", "WINNER: ○", "WINNER: ✕"];
+const CLEAR_URL = "https://twitter.com/intent/tweet?text=LINE%E8%AC%8E%E3%80%8E%E6%9C%80%E5%96%84%E6%89%8B%E3%80%8FCLEAR%0A%E6%9C%80%E5%96%84%E6%89%8B%E3%82%92%E6%89%93%E3%81%A1%E7%B6%9A%E3%81%91%E3%81%9F%EF%BC%81%0A%0APLAY%EF%BC%88%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E7%89%88%E3%81%AE%E3%81%BF%EF%BC%89%20%E2%86%92%20https%3A%2F%2Flin.ee%2FzzNhJsv%0A%0A%23%E6%9C%80%E5%96%84%E6%89%8B%E8%AC%8E%20%23LINE%E8%AC%8E%20%40TM_TryAngle";
+const CLEAR_URL_GREAT = "https://twitter.com/intent/tweet?text=LINE%E8%AC%8E%E3%80%8E%E6%9C%80%E5%96%84%E6%89%8B%E3%80%8F%E3%81%A7%E9%9A%A0%E3%81%97%E8%A6%81%E7%B4%A0%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%9F%EF%BC%81%0A%0APLAY%EF%BC%88%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E7%89%88%E3%81%AE%E3%81%BF%EF%BC%89%20%E2%86%92%20https%3A%2F%2Flin.ee%2FzzNhJsv%0A%0A%23%E6%9C%80%E5%96%84%E6%89%8B%E8%AC%8E%20%23LINE%E8%AC%8E%20%40TM_TryAngle";
+const CLEAR_URL_NULL = "https://twitter.com/intent/tweet?text=LINE%E8%AC%8E%E3%80%8E%E6%9C%80%E5%96%84%E6%89%8B%E3%80%8F%E3%81%A7%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%9F%EF%BC%81%0A%0APLAY%EF%BC%88%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E7%89%88%E3%81%AE%E3%81%BF%EF%BC%89%20%E2%86%92%20https%3A%2F%2Flin.ee%2FzzNhJsv%0A%0A%23%E6%9C%80%E5%96%84%E6%89%8B%E8%AC%8E%20%23LINE%E8%AC%8E%20%40TM_TryAngle";
 
 const CAROUSEL =()=> {
   let content = [];
@@ -326,61 +329,63 @@ const CAROUSEL =()=> {
 }
 */
 
-const CLEAR_MSG = {
-  "type": "bubble",
-  "size": "kilo",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "Congratulations!",
-        "weight": "bold",
-        "size": "lg",
-        "color": "#404040"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "margin": "lg",
-        "contents": [
-          {
-            "type": "text",
-            "text": "クリアツイートは以下のボタンからお願いいたします。",
-            "color": "#404040",
-            "wrap": true,
-            "size": "sm"
-          }
-        ]
-      }
-    ],
-    "paddingBottom": "none"
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "TWEET",
-          "uri": "https://twitter.com/intent/tweet?text=LINE%E8%AC%8E%E3%80%8Ewater%E3%80%8Fclear!%0A%0Aplay%20%E2%86%92%20https%3A%2F%2Flin.ee%2FPMyXCdw%0A%0A%23water%E8%AC%8E%20%23LINE%E8%AC%8E%20%40TM_TryAngle"
+const CLEAR_MSG =(url, text)=> {
+  return {
+    "type": "bubble",
+    "size": "kilo",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "Congratulations!",
+          "weight": "bold",
+          "size": "lg",
+          "color": "#404040"
         },
-        "height": "sm",
-        "color": "#00acee",
-        "style": "primary"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [],
-        "margin": "sm"
-      }
-    ]
-  }
-};
+        {
+          "type": "box",
+          "layout": "vertical",
+          "margin": "lg",
+          "contents": [
+            {
+              "type": "text",
+              "text": text+"\nクリアツイートは以下のボタンからお願いいたします。",
+              "color": "#404040",
+              "wrap": true,
+              "size": "sm"
+            }
+          ]
+        }
+      ],
+      "paddingBottom": "none"
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "TWEET",
+            "uri": url
+          },
+          "height": "sm",
+          "color": "#00acee",
+          "style": "primary"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [],
+          "margin": "sm"
+        }
+      ]
+    }
+  };
+}
 
 const RULE = {
   "type": "bubble",

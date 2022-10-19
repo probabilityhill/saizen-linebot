@@ -2,8 +2,8 @@
 function getReplyMsg(userId, text){
   let status = getStatus(userId);  // ステータスを取得
 
-  if(text == "start"){
-    setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);  // データを初期化
+  if(text == "START"){
+    setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);   // データを初期化
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
     return[CAROUSEL(), getTextMsg(" TUTORIAL(Q1～Q3)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
@@ -15,11 +15,11 @@ function getReplyMsg(userId, text){
   }
   else if(text == "great" && getStatus(userId,col=18)){
     setStatus(userId, 1, col=19);  // 到達を記録
-    return getFlexMsg("Congratulations!", CLEAR_MSG, getImgUrl("great"), hasText=true);
+    return [getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_GREAT, "隠し要素を見つけた！")), getImgMsg(getImgUrl("great"))];
   }  
   else if(text == "null" && getStatus(userId,col=18)){
     setStatus(userId, 1, col=20);  // 到達を記録
-    return getFlexMsg("Congratulations!", CLEAR_MSG, getImgUrl("null"), hasText=true);
+    return [getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_NULL, "ないものを見つけた！")), getImgMsg(getImgUrl("null"))];
   }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
@@ -75,7 +75,7 @@ function getReplyMsg(userId, text){
           if(JUDGE_RESULT[1]){  // クリア可能な場合
             setStatus(userId, 1, col=18);  // 到達を記録
             msg += "DRAW（最善を尽くした）";
-            // クリア画像
+            return [getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL, "最善を尽くした！")), getImgMsg(getImgUrl("clear"))];
           }
           else{
             msg += "DRAW（最善を尽くさなかった）";
