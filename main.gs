@@ -1,6 +1,6 @@
 function tmp() {
   const USER_ID = "test";
-  let text = "start";
+  let text = "hint";
   console.log(getReplyMsg(USER_ID, text));
   //console.log(getStatus(USER_ID, col=16));
   //console.log(CAROUSEL());
@@ -33,6 +33,10 @@ function execute(event){
       let text = event.message.text.trim();  // 先頭・末尾の空白削除
       sendReplyMessage(REPLY_TOKEN, getReplyMsg(USER_ID, text));
     }
+  }
+  else if(EVENT_TYPE === "postback"){   
+    const N = parseInt(event.postback.data);  // ヒントの番号
+    sendReplyMessage(REPLY_TOKEN, [getTextMsg(HINT_LIST[N-1])]);
   }
 }
 

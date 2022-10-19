@@ -6,8 +6,7 @@ const SHEET_ID = "1IMu0jFkGIxofVEWgy71pNf1iR6RaAJwDB_tgjZ-GGKY";
 const SHEET = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
 
 const ANS_LIST = ["くし","いくさ","くるま","ゆみ","とほ","みぎ","めん","くつした","くち","ふくし","ふいくさ","ふくるま","ふゆみ","ふとほ","ふみぎ","ふめん","ふくつした","ふくち"];
-const HINT_1_3 = "騎士=■ | □□→🦌 | 👁️";
-const HINT_4_9 = "50 | ↓↑ | ←→ | □ん | ろ | 📺";
+const HINT_LIST = ["🕒","□□→🦌","👁️","ろ","📺","☀️","50","H＜=推測","□=□=□=ん"];
 const HINT_GAME = "■: 置く場所";
 const CLEAR_ORDER = [4,11,8,9,1,16,3,14,6];
 const ENDED_LIST = ["GAME OVER", "WINNER: ○", "WINNER: ✕"];
@@ -63,8 +62,8 @@ const CAROUSEL =()=> {
                   "color": "#cccccc",
                   "action": {
                     "type": "postback",
-                    "data": "hint"+N
-                  },
+                    "data": String(N)
+                  },                  
                   "size": "sm"
                 }
               ],
@@ -96,7 +95,7 @@ const QUICK_REPLY = {
       "type": "action",
       "action": {
         "type": "message",
-        "label": "start",
+        "label": "START",
         "text": "start"
       }
     },
@@ -104,23 +103,23 @@ const QUICK_REPLY = {
       "type": "action",
       "action": {
         "type": "message",
-        "label": "hint",
-        "text": "hint"
+        "label": "RULE",
+        "text": "rule"
       }
     },
     {
       "type": "action",
       "action": {
         "type": "message",
-        "label": "rule",
-        "text": "rule"
+        "label": "HINT(GAME)",
+        "text": "hint_game"
       }
     },    
     {
       "type": "action",
       "action": {
         "type": "uri",
-        "label": "contact",
+        "label": "CONTACT",
         "uri": "https://twitter.com/TM_TryAngle"
       }
     }

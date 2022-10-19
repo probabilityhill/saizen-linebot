@@ -8,21 +8,8 @@ function getReplyMsg(userId, text){
     const ANS = ANS_LIST[CLEAR_ORDER[0]];
     return[CAROUSEL(), getTextMsg("Q1～Q3 (TUTORIAL)"),getFlexMsg("CLICK", getAnsBtn(ANS))];
   }
-  else if(text == "hint"){
-    let hint;
-    if(status >= 1 && status <= 3){
-      hint = HINT_1_3;
-    }
-    else if(status >= 4 && status <= 9){
-      hint = HINT_4_9;
-    }
-    else if(status === 10){
-      hint = HINT_GAME;
-    }
-    else{
-      hint = "None.";
-    }
-    return [getTextMsg(hint)];
+  else if(text == "hint_game"){
+    return [getTextMsg(HINT_GAME)];
   }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
