@@ -16,11 +16,11 @@ function getReplyMsg(userId, text){
   else if(text == "Q"){
     return [CAROUSEL()];
   }
-  else if(text == "great" && getStatus(userId,col=18)){
+  else if((text == "great" || text == "GREAT") && getStatus(userId,col=18)){
     setStatus(userId, 1, col=19);  // 到達を記録
     return [getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_GREAT, "隠し要素を見つけた！")), getImgMsg(getImgUrl("great"))];
   }  
-  else if(text == "null" && getStatus(userId,col=18)){
+  else if((text == "null" || text == "NULL") && getStatus(userId,col=18)){
     setStatus(userId, 1, col=20);  // 到達を記録
     return [getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_NULL, "ないものを見つけた！")), getImgMsg(getImgUrl("null"))];
   }
