@@ -89,6 +89,478 @@ const CAROUSEL =()=> {
   );
 };
 
+/*
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "RULE",
+            "weight": "bold",
+            "color": "#404040",
+            "size": "lg"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "最善手を打ち続ける（＝Q1~9を正しい順に解き進める）ことでクリアとなる。ただし、Q1, 2 ,3, 7以外の問題番号は不明。",
+                "size": "sm",
+                "color": "#404040",
+                "wrap": true
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ゲーム終了後も解答可能である。また、STARTボタンからいつでもやり直すことができる。",
+                "size": "sm",
+                "color": "#404040",
+                "wrap": true
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Q1~3はチュートリアルとなっているため、ボタンを押すだけでOK。（チュートリアル中のテキストの送信は禁止）",
+                "size": "sm",
+                "color": "#404040",
+                "wrap": true
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "・ 答えはひらがなで送信",
+                "size": "sm",
+                "color": "#404040"
+              },
+              {
+                "type": "text",
+                "text": "・ 正解 → ◯　ふ正解 → ✕",
+                "size": "sm",
+                "color": "#404040"
+              }
+            ],
+            "margin": "sm"
+          }
+        ]
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ボタンの機能",
+            "weight": "bold",
+            "color": "#666666",
+            "size": "sm"
+          }
+        ],
+        "paddingTop": "md",
+        "paddingBottom": "sm",
+        "paddingStart": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "START",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "スタート / やり直し",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "RULE",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "ルールを確認する",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Q",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "問題画像を見る",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "HINT",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "ゲームのヒントを見る",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CONTACT",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "不具合等を報告する",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          }
+        ],
+        "paddingStart": "md"
+      }
+    ],
+    "paddingAll": "lg"
+  }
+}
+*/
+
+const RULE = {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "RULE",
+            "weight": "bold",
+            "color": "#404040",
+            "size": "lg"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "最善手を打ち続ける（＝Q1~9を正しい順に解き進める）ことでクリアとなる。ただし、Q1, 2 ,3, 7以外の問題番号は不明。",
+                "size": "sm",
+                "color": "#404040",
+                "wrap": true
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ゲーム終了後も解答可能である。また、STARTボタンからいつでもやり直すことができる。",
+                "size": "sm",
+                "color": "#404040",
+                "wrap": true
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Q1~3はチュートリアルとなっているため、ボタンを押すだけでOK。（チュートリアル中のテキストの送信は禁止）",
+                "size": "sm",
+                "color": "#404040",
+                "wrap": true
+              }
+            ],
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "・ 答えはひらがなで送信",
+                "size": "sm",
+                "color": "#404040"
+              },
+              {
+                "type": "text",
+                "text": "・ 正解 → ◯　ふ正解 → ✕",
+                "size": "sm",
+                "color": "#404040"
+              }
+            ],
+            "margin": "sm"
+          }
+        ]
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ボタンの機能",
+            "weight": "bold",
+            "color": "#666666",
+            "size": "sm"
+          }
+        ],
+        "paddingTop": "md",
+        "paddingBottom": "sm",
+        "paddingStart": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "START",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "スタート / やり直し",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "RULE",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "ルールを確認する",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Q",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "問題画像を見る",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "HINT",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "ゲームのヒントを見る",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CONTACT",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1,
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "不具合等を報告する",
+                "wrap": true,
+                "color": "#404040",
+                "size": "sm",
+                "flex": 2
+              }
+            ]
+          }
+        ],
+        "paddingStart": "md"
+      }
+    ],
+    "paddingAll": "lg"
+  }
+};
+
 const QUICK_REPLY = {
   "items": [
     {
