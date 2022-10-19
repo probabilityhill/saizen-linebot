@@ -10,6 +10,9 @@ function getReplyMsg(userId, text){
   else if(text == "HINT"){
     return [getTextMsg(HINT_GAME)];
   }
+  else if(text == "RULE"){
+    return [getFlexMsg("RULE", RULE)];
+  }
   else if(text == "Q"){
     return [CAROUSEL()];
   }

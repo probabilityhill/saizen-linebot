@@ -28,8 +28,7 @@ function execute(event){
     SHEET.getRange(ROW,1).setValue(USER_ID);  // A列目にユーザID記入
     setStatus(USER_ID, 0);  // ステータス0を設定
     SHEET.getDataRange().removeDuplicates([1]);  // ユーザIDの重複を削除
-    // const MSG = getFlexMsg("rule", RULE, getImgUrl("w0"), hasImg=true);
-    // sendReplyMessage(REPLY_TOKEN, MSG);
+    sendReplyMessage(REPLY_TOKEN,  [getFlexMsg("RULE", RULE)]);  // ルールを送信
   }
   else if(EVENT_TYPE === "message"){
     if(event.message.type === "text"){
