@@ -24,8 +24,8 @@ function setStatus(userId, status, col=6, numRows=null, numCols=null){
   else{
     SHEET.getRange(ROW,col).setValue(status);  // col列目にstatusを記入
   }
-  
 }
+
 // ステータスを取得
 function getStatus(userId, col=6, numRows=null, numCols=null){
   const ROW = SHEET.createTextFinder(userId).findNext().getRow();  // ユーザIDが存在する行

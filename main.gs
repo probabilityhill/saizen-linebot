@@ -1,11 +1,8 @@
 function tmp() {
   const USER_ID = "test";
-  let text = "HINT";
-  //console.log(getReplyMsg(USER_ID, text));
+  let text = "null";
+  console.log(getReplyMsg(USER_ID, text));
   //console.log(getStatus(USER_ID, col=16));
-  if(!getStatus(USER_ID,col=18)){
-    console.log("d");
-  }
   
 }
 
