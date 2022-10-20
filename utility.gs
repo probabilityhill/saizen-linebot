@@ -29,10 +29,10 @@ function getUserName(){
   for(let i = 2; i <= LAST_ROW; i++){
     if(SHEET.getRange(i,2).isBlank()){
       const USER_ID = SHEET.getRange(i,1).getValue();
-      const URL = 'https://api.line.me/v2/bot/profile/' + USER_ID;
+      const URL = "https://api.line.me/v2/bot/profile/" + USER_ID;
       const USER_PROFILE = UrlFetchApp.fetch(URL,{
-        'headers': {
-          'Authorization' :  'Bearer ' + ACCESS_TOKEN,
+        "headers": {
+          "Authorization" :  "Bearer " + ACCESS_TOKEN,
         }
       });      
       SHEET.getRange(i,2).setValue(JSON.parse(USER_PROFILE).displayName);

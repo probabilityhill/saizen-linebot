@@ -8,9 +8,9 @@ function tmp() {
 
 // イベントを受け取る
 function doPost(e){
-  const events = JSON.parse(e.postData.contents).events;
-  for (var i = 0; i < events.length; i++){
-    execute(events[i]);
+  const EVENTS = JSON.parse(e.postData.contents).events;
+  for (const event of EVENTS){
+    execute(event);
   }
 }
 
@@ -41,16 +41,16 @@ function execute(event){
 
 // メッセージを送信
 function sendReplyMessage(replyToken, messages){
-  const URL = 'https://api.line.me/v2/bot/message/reply';
+  const URL = "https://api.line.me/v2/bot/message/reply";
   const RES = UrlFetchApp.fetch(URL, {
-    'headers': {
-      'Content-Type': 'application/json; charset=UTF-8',
-      'Authorization': 'Bearer ' + ACCESS_TOKEN,
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Authorization": "Bearer " + ACCESS_TOKEN,
     },
-    'method': 'post',
-    'payload': JSON.stringify({
-      'replyToken': replyToken,
-      'messages': messages 
+    "method": "post",
+    "payload": JSON.stringify({
+      "replyToken": replyToken,
+      "messages": messages 
     }),
   });
   return RES;

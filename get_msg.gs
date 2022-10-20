@@ -100,8 +100,8 @@ function getReplyMsg(userId, text){
 
   // 応答キーワードでない場合
   return [{
-    "type":"text",
-    "text":"...",
+    "type": "text",
+    "text": "...",
     "quickReply": QUICK_REPLY
   }];
 }
@@ -138,8 +138,8 @@ function getAnsBtn(text){
 // テキストメッセージを取得
 function getTextMsg(text){
   return {
-    "type":"text",
-    "text":text,
+    "type": "text",
+    "text": text,
     "quickReply": QUICK_REPLY
   };
 }
@@ -147,8 +147,8 @@ function getTextMsg(text){
 // ○✕を返す
 function getJudgeMsg(n, text){
   return {
-    "type":"text",
-    "text":text,
+    "type": "text",
+    "text": text,
     "sender": {
       "name": n+"手目"
     },
@@ -159,9 +159,9 @@ function getJudgeMsg(n, text){
 // Flex Messageを取得
 function getFlexMsg(label, content){
   return {
-    'type':'flex',
-    'altText':label,
-    'contents':content,
+    "type": "flex",
+    "altText": label,
+    "contents": content,
     "quickReply": QUICK_REPLY
   };
 }
