@@ -1,6 +1,7 @@
 // 応答メッセージを取得
 function getReplyMsg(userId, text){
-  let [status,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear,isSaizen,isGreat,isNull] = getStatus(userId, col=6, numRows=1, numCols=15)[0];  // ステータスを取得
+  // ステータスを取得
+  let [status,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear,isSaizen,isGreat,isNull] = getStatus(userId, col=6, numRows=1, numCols=15)[0];
 
   if(text == "START"){
     setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);   // データを初期化
@@ -73,17 +74,23 @@ function getReplyMsg(userId, text){
         else{
           if(canClear){  // クリア可能な場合
             isSaizen = 1
-            msg += "DRAW（最善を尽くした）";
-            setStatus(userId, [[status+1,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear,isSaizen]], col=6, numRows=1, numCols=13);  // ステータスを更新
-            return [getImgMsg(getImgUrl("clear")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL, "最善を尽くした！"))];
+            msg += "DRAW";
+            // ステータスを更新
+            setStatus(userId, [[status+1,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear,isSaizen]], col=6, numRows=1, numCols=13);
+            return [JUDGE_MSG, getTextMsg(msg), getImgMsg(getImgUrl("clear")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL, "最善手を打ち続けた！"))];
           }
           else{
-            msg += "DRAW（最善を尽くさなかった）";
+            msg += "DRAW";
+            // ステータスを更新
+            setStatus(userId, [[status+1,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear]], col=6, numRows=1, numCols=12);
+            return [JUDGE_MSG, getTextMsg(msg), getImgMsg(getImgUrl("draw"))];
           }          
         }
       }
 
-      setStatus(userId, [[status+1,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear]], col=6, numRows=1, numCols=12);  // ステータスを更新
+      // ステータスを更新
+      setStatus(userId, [[status+1,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear]], col=6, numRows=1, numCols=12);
+      
       if(msg){
         return [JUDGE_MSG, getTextMsg(msg)];
       }
