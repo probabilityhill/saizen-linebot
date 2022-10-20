@@ -3,18 +3,6 @@ function getImgUrl(filename) {
   return "https://github.com/probabilityhill/saizen-linebot/blob/main/img/" + filename + ".png?raw=true";
 }
 
-// 画像ファイル名を取得
-function getFilename(userId, status){
-  let str = "";
-  if(status === 0 || status === 1){
-    return "w0";
-  }
-  for(let n = 1; n < status; n++){
-    str += String(getLetterType(userId, n));
-  }
-  return "w" + str;
-}
-
 // ステータスを設定
 function setStatus(userId, status, col=6, numRows=null, numCols=null){
   const ROW = SHEET.createTextFinder(userId).findNext().getRow();  // ユーザIDが存在する行
