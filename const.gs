@@ -1,5 +1,5 @@
 const SCRIPT_PROPERTIES = PropertiesService.getScriptProperties();
-const ACCESS_TOKEN = SCRIPT_PROPERTIES.getProperty('ACCESS_TOKEN');
+const ACCESS_TOKEN = SCRIPT_PROPERTIES.getProperty("ACCESS_TOKEN");
 
 // ユーザ情報を書きこむシート
 const SHEET_ID = "1IMu0jFkGIxofVEWgy71pNf1iR6RaAJwDB_tgjZ-GGKY";
