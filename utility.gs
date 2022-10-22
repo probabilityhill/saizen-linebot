@@ -1,6 +1,9 @@
 // 画像URLを取得
 function getImgUrl(filename) {
-  return "https://github.com/probabilityhill/saizen-linebot/blob/main/img/" + filename + ".png?raw=true";
+  return [
+    "https://github.com/probabilityhill/saizen-linebot/blob/main/img/" + filename + ".png?raw=true",
+    "https://github.com/probabilityhill/saizen-linebot/blob/main/img/" + filename + "_pre.png?raw=true"
+  ];
 }
 
 // ステータスを設定

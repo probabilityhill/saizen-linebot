@@ -44,7 +44,7 @@ const CAROUSEL =()=> {
           "contents": [
             {
               "type": "image",
-              "url": getImgUrl("q"+N),
+              "url": getImgUrl("q"+N)[1],
               "size": "full",
               "aspectMode": "cover",
               "gravity": "top"
