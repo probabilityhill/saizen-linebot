@@ -17,9 +17,9 @@
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="saizen.svg"
-   inkscape:export-filename="C:\Users\nao\Downloads\saizen_linebot\img\allclear.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   inkscape:export-filename="C:\Users\nao\Downloads\saizen_linebot\img\clear_pre.png"
+   inkscape:export-xdpi="36"
+   inkscape:export-ydpi="36">
   <defs
      id="defs2">
     <pattern
@@ -1148,19 +1148,19 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.17176056"
-     inkscape:cx="2959.563"
-     inkscape:cy="1306.2813"
+     inkscape:cx="-476.42842"
+     inkscape:cy="548.17009"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:object-nodes="false"
      inkscape:object-paths="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1111"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1249"
+     inkscape:window-height="820"
+     inkscape:window-x="500"
+     inkscape:window-y="151"
+     inkscape:window-maximized="0"
      showguides="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
@@ -1188,8 +1188,8 @@
      transform="translate(0,41.666683)"
      style="display:inline">
     <rect
-       y="834.19104"
-       x="494.26773"
+       y="812.36865"
+       x="479.37152"
        height="336.55862"
        width="338.66666"
        id="rect4391"
@@ -3528,8 +3528,8 @@
          id="tspan4642"
          sodipodi:role="line">？</tspan></text>
     <rect
-       y="-832.93445"
-       x="947.50958"
+       y="-818.03821"
+       x="925.68719"
        height="107.14247"
        width="107.81356"
        id="rect4646"
@@ -3539,11 +3539,11 @@
        id="rect4648"
        width="107.81356"
        height="107.14247"
-       x="1062.9362"
-       y="-832.93445" />
+       x="1041.1138"
+       y="-818.03821" />
     <rect
-       y="832.08307"
-       x="494.26773"
+       y="810.26068"
+       x="479.37152"
        height="107.14247"
        width="107.81356"
        id="rect4650"
@@ -3554,12 +3554,12 @@
        id="rect4652"
        width="107.81356"
        height="107.14247"
-       x="609.69427"
-       y="832.08307"
+       x="594.79803"
+       y="810.26068"
        transform="rotate(-90)" />
     <rect
-       y="832.08307"
-       x="725.12091"
+       y="810.26068"
+       x="710.22467"
        height="107.14247"
        width="107.81356"
        id="rect4654"
@@ -3570,13 +3570,13 @@
        id="rect4656"
        width="107.81356"
        height="107.14247"
-       x="-1170.7498"
-       y="494.26773"
+       x="-1148.9274"
+       y="479.37152"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="610.02985"
-       x="-1055.1553"
+       y="595.13361"
+       x="-1033.3329"
        height="107.14247"
        width="107.81356"
        id="rect4658"
@@ -3586,16 +3586,16 @@
        id="rect4660"
        width="107.81356"
        height="107.14247"
-       x="-1055.1553"
-       y="494.26773"
+       x="-1033.3329"
+       y="479.37152"
        transform="scale(-1)" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4662"
        width="107.81356"
        height="107.14247"
-       x="-1170.7498"
-       y="610.02985"
+       x="-1148.9274"
+       y="595.13361"
        transform="scale(-1)" />
     <rect
        y="-47.82835"
@@ -4527,7 +4527,7 @@
     </g>
     <g
        id="g5231"
-       transform="rotate(4.102942,912.09466,1646.3909)">
+       transform="rotate(4.102942,2343.0432,723.18204)">
       <path
          sodipodi:nodetypes="cc"
          style="fill:none;stroke:#404040;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -5118,8 +5118,8 @@
        r="48.396011" />
     <circle
        r="22.493624"
-       cy="-71.639519"
-       cx="235.85126"
+       cy="-134.79672"
+       cx="437.64624"
        id="circle5544"
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:#404040;stroke-width:3.25347805;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <circle
@@ -5162,7 +5162,7 @@
        sodipodi:nodetypes="cccaacc"
        inkscape:connector-curvature="0"
        id="path5568"
-       d="m 299.23394,383.50591 c 28.05595,10.31742 55.37889,9.63966 82.41245,4.62124 l -19.64036,-12.70844 c 0,0 35.55502,-27.67881 28.49777,-43.51687 -12.3697,-27.76038 -70.29317,-36.90203 -90.11454,-13.86377 -12.36618,14.37314 16.94461,54.29978 16.94461,54.29978 z"
+       d="m 274.06331,499.71324 c 28.05595,10.31742 55.37889,9.63966 82.41245,4.62124 L 336.8354,491.62604 c 0,0 35.55502,-27.67881 28.49777,-43.51687 -12.3697,-27.76038 -70.29317,-36.90203 -90.11454,-13.86377 -12.36618,14.37314 16.94461,54.29978 16.94461,54.29978 z"
        style="opacity:0.43800001;fill:#cccccc;fill-opacity:1;stroke:#cccccc;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        style="fill:none;stroke:#404040;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -5312,11 +5312,11 @@
        id="rect1655"
        width="107.81356"
        height="107.14247"
-       x="22.876953"
-       y="-908.35541" />
+       x="115.42659"
+       y="-41.666683" />
     <rect
-       y="-908.35541"
-       x="138.30347"
+       y="-41.666683"
+       x="230.8531"
        height="107.14247"
        width="107.81356"
        id="rect1657"
@@ -5327,12 +5327,12 @@
        id="rect1659"
        width="107.81356"
        height="107.14247"
-       x="569.68872"
-       y="-92.549561" />
+       x="-297"
+       y="7.8837074e-05" />
     <rect
        transform="rotate(-90)"
-       y="-92.549561"
-       x="685.11523"
+       y="7.8837074e-05"
+       x="-181.57349"
        height="107.14247"
        width="107.81356"
        id="rect1661"
@@ -5343,12 +5343,12 @@
        id="rect1663"
        width="107.81356"
        height="107.14247"
-       x="800.54181"
-       y="-92.549561" />
+       x="-66.146919"
+       y="7.8837074e-05" />
     <rect
        transform="scale(-1)"
-       y="569.68878"
-       x="-246.11694"
+       y="-296.99994"
+       x="-338.6666"
        height="107.14247"
        width="107.81356"
        id="rect1665"
@@ -5358,70 +5358,70 @@
        id="rect1667"
        width="107.81356"
        height="107.14247"
-       x="-130.52271"
-       y="685.45081"
+       x="-223.07234"
+       y="-181.23792"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="569.68878"
-       x="-130.52271"
+       y="-296.99994"
+       x="-223.07234"
        height="107.14247"
        width="107.81356"
        id="rect1669"
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        transform="scale(-1)"
-       y="685.45081"
-       x="-246.11694"
+       y="-181.23792"
+       x="-338.6666"
        height="107.14247"
        width="107.81356"
        id="rect1671"
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text1675"
-       y="-702.95447"
-       x="-88.650879"
+       y="163.73425"
+       x="3.8987606"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-702.95447"
-         x="-88.650879"
+         y="163.73425"
+         x="3.8987606"
          id="tspan1673"
          sodipodi:role="line">最</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="26.380615"
-       y="-700.87457"
+       x="118.93025"
+       y="165.81415"
        id="text1679"><tspan
          sodipodi:role="line"
          id="tspan1677"
-         x="26.380615"
-         y="-700.87457"
+         x="118.93025"
+         y="165.81415"
          style="fill:#ffffff;stroke-width:3.13205624">善</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="142.14624"
-       y="-700.31183"
+       x="234.69588"
+       y="166.37689"
        id="text1683"><tspan
          sodipodi:role="line"
          id="tspan1681"
-         x="142.14624"
-         y="-700.31183"
+         x="234.69588"
+         y="166.37689"
          style="fill:#ffffff;stroke-width:3.13205624">手</tspan></text>
     <rect
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1685"
        width="107.81356"
        height="107.14247"
-       x="685.11523"
-       y="-92.549561"
+       x="-181.57349"
+       y="7.8837074e-05"
        transform="rotate(-90)" />
     <rect
        transform="scale(-1)"
-       y="685.45081"
-       x="-130.52271"
+       y="-181.23792"
+       x="-223.07234"
        height="107.14247"
        width="107.81356"
        id="rect1687"
@@ -5431,45 +5431,45 @@
        id="rect1689"
        width="107.81356"
        height="107.14247"
-       x="-246.11694"
-       y="685.45081"
+       x="-338.6666"
+       y="-181.23792"
        transform="scale(-1)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="-88.650879"
-       y="-702.95447"
+       x="3.8987606"
+       y="163.73425"
        id="text1693"><tspan
          sodipodi:role="line"
          id="tspan1691"
-         x="-88.650879"
-         y="-702.95447"
+         x="3.8987606"
+         y="163.73425"
          style="fill:#ffffff;stroke-width:3.13205624">を</tspan></text>
     <text
        id="text1697"
-       y="-700.87457"
-       x="26.380615"
+       y="165.81415"
+       x="118.93025"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-700.87457"
-         x="26.380615"
+         y="165.81415"
+         x="118.93025"
          id="tspan1695"
          sodipodi:role="line">打</tspan></text>
     <text
        id="text1701"
-       y="-700.31183"
-       x="142.14624"
+       y="166.37689"
+       x="234.69588"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-700.31183"
-         x="142.14624"
+         y="166.37689"
+         x="234.69588"
          id="tspan1699"
          sodipodi:role="line">ち</tspan></text>
     <g
        id="g1733"
-       transform="translate(-92.549653,-857.3648)">
+       transform="translate(-1.3616048e-5,9.3239247)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
@@ -5506,7 +5506,7 @@
     </g>
     <g
        id="g1741"
-       transform="translate(-92.549653,-873.76857)">
+       transform="translate(-1.3616048e-5,-7.0798453)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
@@ -5546,11 +5546,11 @@
        id="rect1743"
        width="107.81356"
        height="107.14247"
-       x="-474.94211"
-       y="-897.81024" />
+       x="-546.83203"
+       y="-865.133" />
     <rect
-       y="-897.81024"
-       x="-359.51553"
+       y="-865.133"
+       x="-431.40543"
        height="107.14247"
        width="107.81356"
        id="rect1745"
@@ -5561,12 +5561,12 @@
        id="rect1747"
        width="107.81356"
        height="107.14247"
-       x="559.14355"
-       y="-590.36871" />
+       x="526.46625"
+       y="-662.25861" />
     <rect
        transform="rotate(-90)"
-       y="-590.36871"
-       x="674.57007"
+       y="-662.25861"
+       x="641.89276"
        height="107.14247"
        width="107.81356"
        id="rect1749"
@@ -5577,12 +5577,12 @@
        id="rect1751"
        width="107.81356"
        height="107.14247"
-       x="789.9967"
-       y="-590.36871" />
+       x="757.3194"
+       y="-662.25861" />
     <rect
        transform="scale(-1)"
-       y="559.14355"
-       x="251.70206"
+       y="526.46625"
+       x="323.59195"
        height="107.14247"
        width="107.81356"
        id="rect1753"
@@ -5592,122 +5592,122 @@
        id="rect1755"
        width="107.81356"
        height="107.14247"
-       x="367.29642"
-       y="674.90564"
+       x="439.18631"
+       y="642.22833"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="559.14355"
-       x="367.29642"
+       y="526.46625"
+       x="439.18631"
        height="107.14247"
        width="107.81356"
        id="rect1757"
        style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        transform="scale(-1)"
-       y="674.90564"
-       x="251.70206"
+       y="642.22833"
+       x="323.59195"
        height="107.14247"
        width="107.81356"
        id="rect1759"
        style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text1763"
-       y="-692.66266"
-       x="-585.29889"
+       y="-659.98535"
+       x="-657.18878"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-692.66266"
-         x="-585.29889"
+         y="-659.98535"
+         x="-657.18878"
          id="tspan1761"
          sodipodi:role="line">の</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="-470.2674"
-       y="-690.58276"
+       x="-542.15729"
+       y="-657.90546"
        id="text1767"><tspan
          sodipodi:role="line"
          id="tspan1765"
-         x="-470.2674"
-         y="-690.58276"
+         x="-542.15729"
+         y="-657.90546"
          style="fill:#ffffff;stroke-width:3.13205624">を</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="-354.50177"
-       y="-690.02002"
+       x="-426.39166"
+       y="-657.34271"
        id="text1771"><tspan
          sodipodi:role="line"
          id="tspan1769"
-         x="-354.50177"
-         y="-690.02002"
+         x="-426.39166"
+         y="-657.34271"
          style="fill:#ffffff;stroke-width:3.13205624">見</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="-585.29889"
-       y="-808.08917"
+       x="-657.18878"
+       y="-775.41193"
        id="text1775"><tspan
          sodipodi:role="line"
          id="tspan1773"
-         x="-585.29889"
-         y="-808.08917"
+         x="-657.18878"
+         y="-775.41193"
          style="fill:#ffffff;stroke-width:3.13205624">な</tspan></text>
     <text
        id="text1779"
-       y="-806.00934"
-       x="-470.2674"
+       y="-773.33209"
+       x="-542.15729"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-806.00934"
-         x="-470.2674"
+         y="-773.33209"
+         x="-542.15729"
          id="tspan1777"
          sodipodi:role="line">い</tspan></text>
     <text
        id="text1783"
-       y="-805.44653"
-       x="-354.50177"
+       y="-772.76929"
+       x="-426.39166"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-805.44653"
-         x="-354.50177"
+         y="-772.76929"
+         x="-426.39166"
          id="tspan1781"
          sodipodi:role="line">も</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="-585.29889"
-       y="-574.84521"
+       x="-657.18878"
+       y="-542.16791"
        id="text1789"><tspan
          sodipodi:role="line"
          id="tspan1787"
-         x="-585.29889"
-         y="-574.84521"
+         x="-657.18878"
+         y="-542.16791"
          style="fill:#ffffff;stroke-width:3.13205624">つ</tspan></text>
     <text
        id="text1793"
-       y="-572.76538"
-       x="-470.2674"
+       y="-540.08807"
+       x="-542.15729"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-572.76538"
-         x="-470.2674"
+         y="-540.08807"
+         x="-542.15729"
          id="tspan1791"
          sodipodi:role="line">け</tspan></text>
     <text
        id="text1797"
-       y="-572.20258"
-       x="-354.50177"
+       y="-539.52527"
+       x="-426.39166"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-572.20258"
-         x="-354.50177"
+         y="-539.52527"
+         x="-426.39166"
          id="tspan1795"
          sodipodi:role="line">た</tspan></text>
     <rect
@@ -5715,11 +5715,11 @@
        id="rect1885"
        width="107.81356"
        height="107.14247"
-       x="463.98376"
-       y="-862.95453" />
+       x="497.45068"
+       y="-993.646" />
     <rect
-       y="-862.95453"
-       x="579.41034"
+       y="-993.646"
+       x="612.87726"
        height="107.14247"
        width="107.81356"
        id="rect1887"
@@ -5730,12 +5730,12 @@
        id="rect1889"
        width="107.81356"
        height="107.14247"
-       x="524.28784"
-       y="348.55719" />
+       x="654.97937"
+       y="382.02411" />
     <rect
        transform="rotate(-90)"
-       y="348.55719"
-       x="639.71436"
+       y="382.02411"
+       x="770.40582"
        height="107.14247"
        width="107.81356"
        id="rect1891"
@@ -5746,12 +5746,12 @@
        id="rect1893"
        width="107.81356"
        height="107.14247"
-       x="755.14099"
-       y="348.55719" />
+       x="885.83246"
+       y="382.02411" />
     <rect
        transform="scale(-1)"
-       y="524.28784"
-       x="-687.22382"
+       y="654.97937"
+       x="-720.69073"
        height="107.14247"
        width="107.81356"
        id="rect1895"
@@ -5761,127 +5761,127 @@
        id="rect1897"
        width="107.81356"
        height="107.14247"
-       x="-571.62946"
-       y="640.04993"
+       x="-605.09637"
+       y="770.74139"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="524.28784"
-       x="-571.62946"
+       y="654.97937"
+       x="-605.09637"
        height="107.14247"
        width="107.81356"
        id="rect1899"
        style="opacity:1;fill:#969696;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        transform="scale(-1)"
-       y="640.04993"
-       x="-687.22382"
+       y="770.74139"
+       x="-720.69073"
        height="107.14247"
        width="107.81356"
        id="rect1901"
        style="opacity:1;fill:#969696;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text1905"
-       y="-657.80695"
-       x="353.62698"
+       y="-788.49841"
+       x="387.0939"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-657.80695"
-         x="353.62698"
+         y="-788.49841"
+         x="387.0939"
          id="tspan1903"
          sodipodi:role="line">素</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="468.65848"
-       y="-655.72705"
+       x="502.1254"
+       y="-786.41852"
        id="text1909"><tspan
          sodipodi:role="line"
          id="tspan1907"
-         x="468.65848"
-         y="-655.72705"
+         x="502.1254"
+         y="-786.41852"
          style="fill:#ffffff;stroke-width:3.13205624">を</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="584.42407"
-       y="-655.16431"
+       x="617.89099"
+       y="-785.85577"
        id="text1913"><tspan
          sodipodi:role="line"
          id="tspan1911"
-         x="584.42407"
-         y="-655.16431"
+         x="617.89099"
+         y="-785.85577"
          style="fill:#ffffff;stroke-width:3.13205624">見</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="353.62698"
-       y="-773.23352"
+       x="387.0939"
+       y="-903.92499"
        id="text1917"><tspan
          sodipodi:role="line"
          id="tspan1915"
-         x="353.62698"
-         y="-773.23352"
+         x="387.0939"
+         y="-903.92499"
          style="fill:#ffffff;stroke-width:3.13205624">隠</tspan></text>
     <text
        id="text1921"
-       y="-771.15363"
-       x="468.65848"
+       y="-901.84509"
+       x="502.1254"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-771.15363"
-         x="468.65848"
+         y="-901.84509"
+         x="502.1254"
          id="tspan1919"
          sodipodi:role="line">し</tspan></text>
     <text
        id="text1925"
-       y="-770.59088"
-       x="584.42413"
+       y="-901.28235"
+       x="617.89105"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-770.59088"
-         x="584.42413"
+         y="-901.28235"
+         x="617.89105"
          id="tspan1923"
          sodipodi:role="line">要</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="353.62698"
-       y="-539.9895"
+       x="387.0939"
+       y="-670.68103"
        id="text1929"><tspan
          sodipodi:role="line"
          id="tspan1927"
-         x="353.62698"
-         y="-539.9895"
+         x="387.0939"
+         y="-670.68103"
          style="fill:#ffffff;stroke-width:3.13205624">つ</tspan></text>
     <text
        id="text1933"
-       y="-537.90967"
-       x="468.65848"
+       y="-668.6012"
+       x="502.1254"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-537.90967"
-         x="468.65848"
+         y="-668.6012"
+         x="502.1254"
          id="tspan1931"
          sodipodi:role="line">け</tspan></text>
     <text
        id="text1937"
-       y="-537.34686"
-       x="584.42413"
+       y="-668.03839"
+       x="617.89105"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="-537.34686"
-         x="584.42413"
+         y="-668.03839"
+         x="617.89105"
          id="tspan1935"
          sodipodi:role="line">た</tspan></text>
     <g
        id="g1862"
-       transform="translate(130.61171,-1062.4888)"
+       transform="translate(108.78932,-1047.5926)"
        style="fill:#404040;fill-opacity:1">
       <text
          xml:space="preserve"
@@ -6845,7 +6845,7 @@
     </g>
     <path
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:4.47590256;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1641.3672,90.632451 -0.9775,-55.562188 0.063,-57.819612 0.9146,-55.951468 h 168.2792 V 90.632451 Z"
+       d="m 1488.7047,-628.98943 -0.9775,-55.56218 0.063,-57.81961 0.9146,-55.95147 h 168.2792 v 169.33326 z"
        id="rect2430"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
@@ -6854,11 +6854,11 @@
        id="rect2432"
        width="53.906765"
        height="53.57122"
-       x="1698.0264"
-       y="-78.700867" />
+       x="1545.3639"
+       y="-798.32275" />
     <rect
-       y="-78.700867"
-       x="1755.7396"
+       y="-798.32275"
+       x="1603.0771"
        height="53.57122"
        width="53.906765"
        id="rect2434"
@@ -6869,12 +6869,12 @@
        id="rect2436"
        width="53.906765"
        height="53.57122"
-       x="-90.632454"
-       y="1640.3131" />
+       x="628.98938"
+       y="1487.6506" />
     <rect
        transform="rotate(-90)"
-       y="1640.3131"
-       x="-32.919186"
+       y="1487.6506"
+       x="686.7027"
        height="53.57122"
        width="53.906765"
        id="rect2438"
@@ -6885,12 +6885,12 @@
        id="rect2440"
        width="53.906765"
        height="53.57122"
-       x="24.794111"
-       y="1640.3131" />
+       x="744.41595"
+       y="1487.6506" />
     <rect
        transform="scale(-1)"
-       y="-90.632454"
-       x="-1809.6465"
+       y="628.98938"
+       x="-1656.984"
        height="53.57122"
        width="53.906765"
        id="rect2442"
@@ -6900,39 +6900,39 @@
        id="rect2444"
        width="53.906765"
        height="53.57122"
-       x="-1751.8492"
-       y="-32.7514"
+       x="-1599.1868"
+       y="686.87048"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="-90.632454"
-       x="-1751.8492"
+       y="628.98938"
+       x="-1599.1868"
        height="53.57122"
        width="53.906765"
        id="rect2446"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.42489076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        transform="scale(-1)"
-       y="-32.7514"
-       x="-1809.6465"
+       y="686.87048"
+       x="-1656.984"
        height="53.57122"
        width="53.906765"
        id="rect2448"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.42489076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text2478"
-       y="82.908363"
-       x="1642.2626"
+       y="-636.7135"
+       x="1489.6001"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1.566028"
        xml:space="preserve"><tspan
          style="fill:#404040;fill-opacity:1;stroke-width:1.566028"
-         y="82.908363"
-         x="1642.2626"
+         y="-636.7135"
+         x="1489.6001"
          id="tspan2476"
          sodipodi:role="line">？</tspan></text>
     <rect
-       y="-78.700851"
-       x="1867.3597"
+       y="-798.32269"
+       x="1714.6973"
        height="53.571232"
        width="53.906776"
        id="rect2492"
@@ -6942,11 +6942,11 @@
        id="rect2494"
        width="53.906776"
        height="53.571232"
-       x="1925.073"
-       y="-78.700851" />
+       x="1772.4105"
+       y="-798.32269" />
     <rect
-       y="1809.6465"
-       x="-90.632484"
+       y="1656.984"
+       x="628.98938"
        height="53.571232"
        width="53.906776"
        id="rect2496"
@@ -6957,12 +6957,12 @@
        id="rect2498"
        width="53.906776"
        height="53.571232"
-       x="-32.919231"
-       y="1809.6465"
+       x="686.70264"
+       y="1656.984"
        transform="rotate(-90)" />
     <rect
-       y="1809.6465"
-       x="24.794088"
+       y="1656.984"
+       x="744.41595"
        height="53.571232"
        width="53.906776"
        id="rect2500"
@@ -6973,13 +6973,13 @@
        id="rect2502"
        width="53.906776"
        height="53.571232"
-       x="-1978.9797"
-       y="-90.632484"
+       x="-1826.3173"
+       y="628.98938"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="-32.751446"
-       x="-1921.1826"
+       y="686.87042"
+       x="-1768.5201"
        height="53.571232"
        width="53.906776"
        id="rect2504"
@@ -6989,31 +6989,31 @@
        id="rect2506"
        width="53.906776"
        height="53.571232"
-       x="-1921.1826"
-       y="-90.632484"
+       x="-1768.5201"
+       y="628.98938"
        transform="scale(-1)" />
     <rect
        style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1.42489076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2508"
        width="53.906776"
        height="53.571232"
-       x="-1978.9797"
-       y="-32.751446"
+       x="-1826.3173"
+       y="686.87042"
        transform="scale(-1)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.566028"
-       x="1869.6971"
-       y="-32.800407"
+       x="1717.0347"
+       y="-752.42224"
        id="text2528"><tspan
          sodipodi:role="line"
          id="tspan2526"
-         x="1869.6971"
-         y="-32.800407"
+         x="1717.0347"
+         y="-752.42224"
          style="fill:#ffffff;stroke-width:1.566028">？</tspan></text>
     <rect
-       y="90.632484"
-       x="1867.3596"
+       y="-628.98938"
+       x="1714.6971"
        height="53.571232"
        width="53.906776"
        id="rect2546"
@@ -7023,11 +7023,11 @@
        id="rect2548"
        width="53.906776"
        height="53.571232"
-       x="1925.073"
-       y="90.632484" />
+       x="1772.4105"
+       y="-628.98938" />
     <rect
-       y="1809.6464"
-       x="-259.96576"
+       y="1656.9839"
+       x="459.65607"
        height="53.571232"
        width="53.906776"
        id="rect2550"
@@ -7038,12 +7038,12 @@
        id="rect2552"
        width="53.906776"
        height="53.571232"
-       x="-202.25253"
-       y="1809.6464"
+       x="517.36932"
+       y="1656.9839"
        transform="rotate(-90)" />
     <rect
-       y="1809.6464"
-       x="-144.53925"
+       y="1656.9839"
+       x="575.08264"
        height="53.571232"
        width="53.906776"
        id="rect2554"
@@ -7054,13 +7054,13 @@
        id="rect2556"
        width="53.906776"
        height="53.571232"
-       x="-1978.9797"
-       y="-259.96576"
+       x="-1826.3173"
+       y="459.65607"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="-202.08475"
-       x="-1921.1825"
+       y="517.53711"
+       x="-1768.52"
        height="53.571232"
        width="53.906776"
        id="rect2558"
@@ -7070,31 +7070,31 @@
        id="rect2560"
        width="53.906776"
        height="53.571232"
-       x="-1921.1825"
-       y="-259.96576"
+       x="-1768.52"
+       y="459.65607"
        transform="scale(-1)" />
     <rect
        style="opacity:1;fill:#969696;fill-opacity:1;stroke:none;stroke-width:1.42489076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2562"
        width="53.906776"
        height="53.571232"
-       x="-1978.9797"
-       y="-202.08475"
+       x="-1826.3173"
+       y="517.53711"
        transform="scale(-1)" />
     <text
        id="text2590"
-       y="252.11494"
-       x="1812.1813"
+       y="-467.5069"
+       x="1659.5188"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.566028"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:1.566028"
-         y="252.11494"
-         x="1812.1813"
+         y="-467.5069"
+         x="1659.5188"
          id="tspan2588"
          sodipodi:role="line">？</tspan></text>
     <rect
-       y="90.632454"
-       x="1697.9424"
+       y="-628.98938"
+       x="1545.2799"
        height="53.571232"
        width="53.906776"
        id="rect2600"
@@ -7104,11 +7104,11 @@
        id="rect2602"
        width="53.906776"
        height="53.571232"
-       x="1755.6556"
-       y="90.632454" />
+       x="1602.9932"
+       y="-628.98938" />
     <rect
-       y="1640.2291"
-       x="-259.96576"
+       y="1487.5667"
+       x="459.65607"
        height="53.571232"
        width="53.906776"
        id="rect2604"
@@ -7119,12 +7119,12 @@
        id="rect2606"
        width="53.906776"
        height="53.571232"
-       x="-202.25253"
-       y="1640.2291"
+       x="517.36932"
+       y="1487.5667"
        transform="rotate(-90)" />
     <rect
-       y="1640.2291"
-       x="-144.53926"
+       y="1487.5667"
+       x="575.08258"
        height="53.571232"
        width="53.906776"
        id="rect2608"
@@ -7135,13 +7135,13 @@
        id="rect2610"
        width="53.906776"
        height="53.571232"
-       x="-1809.5624"
-       y="-259.96573"
+       x="-1656.8999"
+       y="459.65613"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="-202.08475"
-       x="-1751.7653"
+       y="517.53711"
+       x="-1599.1028"
        height="53.571232"
        width="53.906776"
        id="rect2612"
@@ -7151,54 +7151,54 @@
        id="rect2614"
        width="53.906776"
        height="53.571232"
-       x="-1751.7653"
-       y="-259.96573"
+       x="-1599.1028"
+       y="459.65613"
        transform="scale(-1)" />
     <rect
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1.42489076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2616"
        width="53.906776"
        height="53.571232"
-       x="-1809.5624"
-       y="-202.08475"
+       x="-1656.8999"
+       y="517.53711"
        transform="scale(-1)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.566028"
-       x="1642.1785"
-       y="193.33293"
+       x="1489.516"
+       y="-526.28894"
        id="text2620"><tspan
          sodipodi:role="line"
          id="tspan2618"
-         x="1642.1785"
-         y="193.33293"
+         x="1489.516"
+         y="-526.28894"
          style="fill:#ffffff;stroke-width:1.566028">最</tspan></text>
     <text
        id="text2624"
-       y="194.37288"
-       x="1699.6942"
+       y="-525.24896"
+       x="1547.0317"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.566028"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:1.566028"
-         y="194.37288"
-         x="1699.6942"
+         y="-525.24896"
+         x="1547.0317"
          id="tspan2622"
          sodipodi:role="line">善</tspan></text>
     <text
        id="text2628"
-       y="194.65425"
-       x="1757.577"
+       y="-524.96759"
+       x="1604.9146"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.566028"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:1.566028"
-         y="194.65425"
-         x="1757.577"
+         y="-524.96759"
+         x="1604.9146"
          id="tspan2626"
          sodipodi:role="line">手</tspan></text>
     <rect
        transform="rotate(-90)"
-       y="1640.2291"
-       x="-202.25253"
+       y="1487.5667"
+       x="517.36932"
        height="53.571232"
        width="53.906776"
        id="rect2630"
@@ -7208,31 +7208,31 @@
        id="rect2632"
        width="53.906776"
        height="53.571232"
-       x="-1751.7653"
-       y="-202.08475"
+       x="-1599.1028"
+       y="517.53711"
        transform="scale(-1)" />
     <rect
        transform="scale(-1)"
-       y="-202.08475"
-       x="-1809.5624"
+       y="517.53711"
+       x="-1656.8999"
        height="53.571232"
        width="53.906776"
        id="rect2634"
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:1.42489076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text2668"
-       y="253.28154"
-       x="1699.6943"
+       y="-466.34033"
+       x="1547.0319"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.11289597px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.566028"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:1.566028"
-         y="253.28154"
-         x="1699.6943"
+         y="-466.34033"
+         x="1547.0319"
          id="tspan2666"
          sodipodi:role="line">？</tspan></text>
     <rect
-       y="-41.666611"
-       x="115.42667"
+       y="1032.3252"
+       x="546.76617"
        height="107.14247"
        width="107.81356"
        id="rect2817"
@@ -7242,11 +7242,11 @@
        id="rect2819"
        width="107.81356"
        height="107.14247"
-       x="230.8532"
-       y="-41.666611" />
+       x="662.19269"
+       y="1032.3252" />
     <rect
-       y="0.00016276042"
-       x="-297.00003"
+       y="431.33966"
+       x="-1370.9918"
        height="107.14247"
        width="107.81356"
        id="rect2821"
@@ -7257,12 +7257,12 @@
        id="rect2823"
        width="107.81356"
        height="107.14247"
-       x="-181.57356"
-       y="0.00016276042"
+       x="-1255.5653"
+       y="431.33966"
        transform="rotate(-90)" />
     <rect
-       y="0.00016276042"
-       x="-66.146988"
+       y="431.33966"
+       x="-1140.1388"
        height="107.14247"
        width="107.81356"
        id="rect2825"
@@ -7273,109 +7273,109 @@
        id="rect2827"
        width="107.81356"
        height="107.14247"
-       x="-338.66666"
-       y="-296.99997"
+       x="-770.00616"
+       y="-1370.9917"
        transform="scale(-1)" />
     <rect
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2831"
        width="107.81356"
        height="107.14247"
-       x="-223.07243"
-       y="-296.99997"
+       x="-654.41193"
+       y="-1370.9917"
        transform="scale(-1)" />
     <rect
        style="opacity:1;fill:#404040;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect2833"
        width="107.81356"
        height="107.14247"
-       x="-338.66666"
-       y="-181.23799"
+       x="-770.00616"
+       y="-1255.2297"
        transform="scale(-1)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="3.8988445"
-       y="163.73433"
+       x="435.23834"
+       y="1237.7261"
        id="text2837"><tspan
          sodipodi:role="line"
          id="tspan2835"
-         x="3.8988445"
-         y="163.73433"
+         x="435.23834"
+         y="1237.7261"
          style="fill:#ffffff;stroke-width:3.13205624">最</tspan></text>
     <text
        id="text2841"
-       y="165.81422"
-       x="118.93034"
+       y="1239.806"
+       x="550.26984"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="165.81422"
-         x="118.93034"
+         y="1239.806"
+         x="550.26984"
          id="tspan2839"
          sodipodi:role="line">善</tspan></text>
     <text
        id="text2845"
-       y="166.37697"
-       x="234.69597"
+       y="1240.3688"
+       x="666.03546"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="166.37697"
-         x="234.69597"
+         y="1240.3688"
+         x="666.03546"
          id="tspan2843"
          sodipodi:role="line">手</tspan></text>
     <rect
        transform="rotate(-90)"
-       y="0.00016276042"
-       x="-181.57356"
+       y="431.33966"
+       x="-1255.5653"
        height="107.14247"
        width="107.81356"
        id="rect2847"
        style="opacity:1;fill:#969696;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        transform="scale(-1)"
-       y="-181.23799"
-       x="-338.66666"
+       y="-1255.2297"
+       x="-770.00616"
        height="107.14247"
        width="107.81356"
        id="rect2851"
        style="opacity:1;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:2.84978175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text2855"
-       y="163.73433"
-       x="3.8988445"
+       y="1237.7261"
+       x="435.23834"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
        xml:space="preserve"><tspan
          style="fill:#ffffff;stroke-width:3.13205624"
-         y="163.73433"
-         x="3.8988445"
+         y="1237.7261"
+         x="435.23834"
          id="tspan2853"
          sodipodi:role="line">を</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#404040;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="118.93034"
-       y="165.81422"
+       x="550.26984"
+       y="1239.806"
        id="text2859"><tspan
          sodipodi:role="line"
          id="tspan2857"
-         x="118.93034"
-         y="165.81422"
+         x="550.26984"
+         y="1239.806"
          style="fill:#404040;fill-opacity:1;stroke-width:3.13205624">解</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:100.22579956px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.13205624"
-       x="234.69597"
-       y="166.37697"
+       x="666.03546"
+       y="1240.3688"
        id="text2863"><tspan
          sodipodi:role="line"
          id="tspan2861"
-         x="234.69597"
-         y="166.37697"
+         x="666.03546"
+         y="1240.3688"
          style="fill:#ffffff;stroke-width:3.13205624">き</tspan></text>
     <g
-       transform="translate(3.4440104e-5,9.3239797)"
+       transform="translate(431.33953,1083.3157)"
        id="g2877">
       <text
          id="text2867"
@@ -7412,7 +7412,7 @@
            style="fill:#ffffff;stroke-width:3.13205624">手</tspan></text>
     </g>
     <g
-       transform="translate(3.4440104e-5,-7.0797903)"
+       transform="translate(431.33953,1066.912)"
        id="g2891">
       <text
          id="text2881"
