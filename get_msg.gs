@@ -1,7 +1,7 @@
 // 応答メッセージを取得
 function getReplyMsg(userId, text){
   // ステータスを取得
-  let [status,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear,isSaizen,isGreat,isNull] = getStatus(userId, col=6, numRows=1, numCols=15)[0];
+  let [status,e1,e2,e3,e4,e5,e6,e7,e8,e9,result,canClear,isSaizen,isGreat,isNull,isOmake] = getStatus(userId, col=6, numRows=1, numCols=16)[0];
 
   if(text == "START"){
     setStatus(userId, [[1,0,0,0,0,0,0,0,0,0,0,1]], col=6, numRows=1, numCols=12);   // データを初期化
@@ -16,14 +16,6 @@ function getReplyMsg(userId, text){
   }
   else if(text == "Q"){
     return [CAROUSEL()];
-  }
-  else if((text == "great" || text == "GREAT") && isSaizen){
-    setStatus(userId, 1, col=19);  // 到達を記録
-    return [getImgMsg(getImgUrl("great")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_GREAT, "隠し要素を見つけた！"))];
-  }  
-  else if((text == "null" || text == "NULL") && isSaizen){
-    setStatus(userId, 1, col=20);  // 到達を記録
-    return [getImgMsg(getImgUrl("null")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_NULL, "ないものを見つけた！"))];
   }
   else outer: if(status >= 1 && status <= 9){  // status1~9の場合
     const ANS_IDX = ANS_LIST.indexOf(text);
@@ -70,6 +62,7 @@ function getReplyMsg(userId, text){
         msg = "【RESULT】";
         if(result){  // ゲームが終了している場合
           msg += result;
+          return [JUDGE_MSG, getTextMsg(msg), getImgMsg(getImgUrl("draw"))];
         }
         else{
           if(canClear){  // クリア可能な場合
@@ -96,6 +89,26 @@ function getReplyMsg(userId, text){
       }
       return [JUDGE_MSG];
     }
+  }
+  else if((text == "great" || text == "GREAT") && isSaizen){
+    if(isNull){
+      setStatus(userId, [[1,1,1]], col=19, numRows=1, numCols=3);  // 到達を記録
+      return [getImgMsg(getImgUrl("great")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_GREAT, "隠し要素を見つけた！")),getImgMsg(getImgUrl("last"))];
+    }
+    setStatus(userId, 1, col=19);  // 到達を記録
+    return [getImgMsg(getImgUrl("great")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_GREAT, "隠し要素を見つけた！"))];
+  }  
+  else if((text == "null" || text == "NULL") && isSaizen){
+    if(isGreat){
+      setStatus(userId, [[1,1]], col=20, numRows=1, numCols=2);  // 到達を記録
+      return [getImgMsg(getImgUrl("null")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_NULL, "ないものを見つけた！")),getImgMsg(getImgUrl("last"))];
+    }    
+    setStatus(userId, 1, col=20);  // 到達を記録
+    return [getImgMsg(getImgUrl("null")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_NULL, "ないものを見つけた！"))];
+  }
+  else if((text == "かいけつ" || text == "解決") && isOmake){
+    setStatus(userId, 1, col=22);  // 到達を記録
+    return [getImgMsg(getImgUrl("allclear")), getFlexMsg("Congratulations!", CLEAR_MSG(CLEAR_URL_ALLCLEAR, "最善手を解き尽くした！"))];
   }
 
   // 応答キーワードでない場合

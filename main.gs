@@ -1,6 +1,6 @@
 function tmp() {
   const USER_ID = "test";
-  let text = "めん";
+  let text = "かいけつ";
   console.log(getReplyMsg(USER_ID, text));
   //console.log(getStatus(USER_ID, col=16));
   
