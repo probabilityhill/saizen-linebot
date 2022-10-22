@@ -180,11 +180,11 @@ function getFlexMsg(label, content){
 }
 
 // 画像メッセージを取得
-function getImgMsg(urlList){
+function getImgMsg(url){
   return {
     "type": "image",
-    "originalContentUrl": urlList[0],
-    "previewImageUrl": urlList[1],
+    "originalContentUrl": url,
+    "previewImageUrl": url,
     "quickReply": QUICK_REPLY
   };
 }
