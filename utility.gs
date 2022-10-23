@@ -26,7 +26,7 @@ function getStatus(userId, col=6, numRows=null, numCols=null){
 // ユーザ情報取得
 function getUserName(){
   const LAST_ROW = SHEET.getLastRow();  // 最終行取得
-  for(let i = 2; i <= LAST_ROW; i++){
+  for(let i = 3; i <= LAST_ROW; i++){
     if(SHEET.getRange(i,2).isBlank()){
       const USER_ID = SHEET.getRange(i,1).getValue();
       const URL = "https://api.line.me/v2/bot/profile/" + USER_ID;

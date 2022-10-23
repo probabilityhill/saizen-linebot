@@ -115,7 +115,7 @@ const CLEAR_MSG =(url, text)=> {
           "contents": [
             {
               "type": "text",
-              "text": text+"\nクリアツイートは以下のボタンからお願いいたします。",
+              "text": text+"\nクリアツイートは以下のボタンからお願いいたします。（CLEAR画像は掲載可）",
               "color": "#404040",
               "wrap": true,
               "size": "sm"
