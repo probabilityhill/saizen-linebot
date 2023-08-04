@@ -156,6 +156,7 @@ const HINT_GAME = {
   "contents": [
     {
       "type": "bubble",
+      "size": "kilo",
       "body": {
         "type": "box",
         "layout": "vertical",
@@ -170,8 +171,7 @@ const HINT_GAME = {
         "paddingAll": "sm",
         "alignItems": "center",
         "justifyContent": "center"
-      },
-      "size": "kilo"
+      }
     },
     {
       "type": "bubble",
@@ -228,6 +228,69 @@ const HINT_GAME = {
         "paddingAll": "sm",
         "alignItems": "center",
         "justifyContent": "center"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "✕が返ってくる条件がわからない場合はRULEをよく読もう",
+            "size": "xs",
+            "wrap": true
+          }
+        ],
+        "paddingAll": "md",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "1手目の解説：Q1の正解を送信することで真ん中のマスに○が置かれる",
+            "size": "xs",
+            "wrap": true
+          }
+        ],
+        "paddingAll": "md",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "2手目の解説：Q2のふ正解を送信することで右上のマスに✕が置かれる",
+            "size": "xs",
+            "wrap": true
+          }
+        ],
+        "paddingAll": "md",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
       }
     }
   ]
