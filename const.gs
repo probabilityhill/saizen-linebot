@@ -133,7 +133,7 @@ const CLEAR_MSG =(url, text)=> {
           "type": "button",
           "action": {
             "type": "uri",
-            "label": "TWEET",
+            "label": "POST",
             "uri": url
           },
           "height": "sm",
