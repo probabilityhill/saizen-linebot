@@ -47,13 +47,14 @@ function getUserProfile(){
         USER_PROFILE.pictureUrl
       ]);      
     }    
-    catch {
+    catch(e) {
       // 取得できなかった場合は"Not found."と記入
       userInfoList.push([
         "Not found.",
         "Not found.", 
         "Not found."
-      ]);      
+      ]);
+      console.log(e);
     }
   }
   const NUM_ROWS = userInfoList.length;  // 書き込む行数

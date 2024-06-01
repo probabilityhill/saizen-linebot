@@ -292,6 +292,69 @@ const HINT_GAME = {
         "paddingStart": "lg",
         "paddingEnd": "lg"
       }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "この先はクリア後のヒント→",
+            "size": "xs",
+            "wrap": true
+          }
+        ],
+        "paddingAll": "md",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "アイコンを確認しよう",
+            "size": "xs",
+            "wrap": true
+          }
+        ],
+        "paddingAll": "md",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "size": "kilo",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ゲームを振り返ろう",
+            "size": "xs",
+            "wrap": true
+          }
+        ],
+        "paddingAll": "md",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingStart": "lg",
+        "paddingEnd": "lg"
+      }
     }
   ]
 };

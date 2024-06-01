@@ -6,6 +6,16 @@ function tmp() {
   
 }
 
+function testGetUserInfo() {
+    const URL = "https://api.line.me/v2/bot/profile/" + "Uab5d60c7a728c9116595ee282e027bf3";  // 末尾にユーザーIDを追加
+    const USER_PROFILE = JSON.parse(UrlFetchApp.fetch(URL,{
+      "headers": {
+        "Authorization":  "Bearer " + ACCESS_TOKEN
+      }
+    }));
+    console.log(USER_PROFILE);
+}
+
 // イベントを受け取る
 function doPost(e){
   const EVENTS = JSON.parse(e.postData.contents).events;
